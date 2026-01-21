@@ -1,38 +1,53 @@
 # Textbringer::Markdown
 
-TODO: Delete this and the text below, and describe your gem
+A Textbringer plugin that provides Markdown syntax highlighting with support for headings, code blocks, links, lists, and more.
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/textbringer/markdown`. To experiment with that code, run `bin/console` for an interactive prompt.
+## Features
+
+- Syntax highlighting for Markdown elements:
+  - Headings (`#` through `######`)
+  - Bold (`**text**` or `__text__`)
+  - Italic (`*text*` or `_text_`)
+  - Inline code (`` `code` ``)
+  - Code blocks (triple backticks or 4-space indented)
+  - Links (`[text](url)`)
+  - URLs (`http://` or `https://`)
+  - Blockquotes (`> text`)
+  - Lists (`-`, `*`, `+`, or numbered)
+  - Horizontal rules (`---`, `***`, or `___`)
+
+- Automatically activates for `.md` files
+- Configures buffer settings for Markdown editing (spaces instead of tabs, tab width 4)
 
 ## Installation
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
-
-Install the gem and add to the application's Gemfile by executing:
+Install the gem by executing:
 
 ```bash
-bundle add UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+gem install textbringer-markdown
 ```
 
-If bundler is not being used to manage dependencies, install the gem by executing:
+Or add it to your Gemfile:
 
 ```bash
-gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+bundle add textbringer-markdown
 ```
 
 ## Usage
 
-TODO: Write usage instructions here
+The plugin is automatically loaded when you start Textbringer. Simply open any `.md` file and syntax highlighting will be applied automatically.
+
+No additional configuration is required.
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+To install this gem onto your local machine, run `bundle exec rake install`.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/textbringer-markdown.
+Bug reports and pull requests are welcome on GitHub at https://github.com/yancya/textbringer-markdown.
 
 ## License
 
