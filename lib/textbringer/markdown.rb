@@ -19,7 +19,7 @@ module Textbringer
   Face.define :markdown_hr, foreground: "white", bold: true
 
   class MarkdownMode < Mode
-    self.file_name_pattern = /\.(?:md|markdown|mkd|mdown|mkdn|mdwn)\z/i
+    self.file_name_pattern = /\.md\z/i
 
     # Headings (# ## ### etc)
     define_syntax :markdown_heading, /
